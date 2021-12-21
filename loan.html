@@ -33,15 +33,15 @@
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
-    <!-- Preloader -->
-	<div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
+        <!-- Preloader -->
+        <div class="spinner-wrapper">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
         </div>
-    </div>
-    <!-- end of preloader -->
+        <!-- end of preloader -->
     
 
     <!-- Navigation -->
@@ -64,23 +64,22 @@
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="admin_home.html">HOME </a>
+                        <a  class="nav-link page-scroll" href="employee_home.html">HOME </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="create_user.html">Create User</a>
+                        <a class="nav-link page-scroll" href="evaluation.html">View Evaluation</a>
                     </li>
-                    <li class="nav-item">
-                        <a style="color: black;" class="nav-link page-scroll" href="edit_user.html">Edit User</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="attendence.html">View Attendence</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="delete_user.html">Delete User</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="holiday.html">Holiday Request</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="request_user.html">Requests</a>
-                    </li>
-
+                        <li class="nav-item">
+                            <a style="color: black;" class="nav-link page-scroll" href="loan.html">Request Loan</a>
+                        </li>
 
                     <!-- Dropdown Menu -->          
                 
@@ -100,45 +99,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Edit User</h1>
+                    <h1>Reuest for a Loan</h1>
                     <!-- Sign Up Form -->
                     <div class="form-container">
                         <form id="signUpForm" data-toggle="validator" data-focus="false">
                             <p style="color: black;">
-                                write user Id then edit details
+                                write the amount that you need and the reason of this request
                             </p>
-                            <div style="margin-bottom: 50px;" class="form-group">
-                                <input type="text" class="form-control-input" id="sname" required>
-                                <label class="label-control" for="sname">ID</label>
-                                <div class="help-block with-errors"></div>
-                                <div class="button-wrapper">
-                                    <a class="btn-solid-reg page-scroll" data-toggle="modal" data-target="#myModal" style="width: 130px; margin-top: 15px; color: white;" >Show</a>
-                                </div>
-
-                                <div id="myModal" class="modal fade" role="dialog">
-                                    <div class="modal-dialog">
-                                  
-                                      <!-- Modal content-->
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                          <h4 class="modal-title"> Are you looking for Mohammed?</h4>
-                                        </div>
-                                        
-                                        <div class="modal-footer">
-                                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        </div>
-                                      </div>
-                                  
-                                    </div>
-                                  </div>
-                            </div>
+                          
 
                             
 
                             <div class="form-group">
                                 <input type="text" class="form-control-input" id="sname" required>
-                                <label class="label-control" for="sname">username</label>
+                                <label class="label-control" for="sname">Amount</label>
                                 <div class="help-block with-errors"></div>
                             </div>
 
@@ -146,35 +120,11 @@
 
                             <div class="form-group">
                                 <input type="email" class="form-control-input" id="semail" required>
-                                <label class="label-control" for="semail">Email</label>
+                                <label class="label-control" for="semail">Reason</label>
                                 <div class="help-block with-errors"></div>
                             </div>
 
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="spassword" required>
-                                <label class="label-control" for="spassword">Password</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="semail" required>
-                                <label class="label-control" for="semail">Address</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="semail" required>
-                                <label class="label-control" for="semail">Phone Number</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="semail" required>
-                                <label class="label-control" for="semail">Job title</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-
-
+                           
                             
                             
                       
@@ -188,7 +138,7 @@
                            
                            
                             <div style="margin-bottom: 40px;" class="form-group">
-                                <button type="submit" class="form-control-submit-button" data-toggle="modal" data-target="#myModal">Submit</button>
+                                <button type="submit" class="form-control-submit-button" data-toggle="modal" data-target="#myModal">Confirm</button>
 
                                 <div id="myModal" class="modal fade" role="dialog">
                                     <div class="modal-dialog">
@@ -201,7 +151,7 @@
                                         </div>
                                         <div class="modal-body">
                                           <p
-                                           style="color: green;">User Edited Succesfully</p>
+                                           style="color: green;">Request sent Succesfully</p>
                                         </div>
                                         <div class="modal-footer">
                                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -226,6 +176,18 @@
     </header> <!-- end of ex-header -->
     <!-- end of header -->
 
+      <!-- Copyright -->
+      <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2021 ToMix Co.</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
 
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->

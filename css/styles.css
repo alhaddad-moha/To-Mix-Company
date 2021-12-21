@@ -155,6 +155,7 @@ a.white {
 	border-radius: 2rem;
 	background-color: #5f4def;
 	color: #fff;
+	border: 2px solid white;
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s;
@@ -162,8 +163,9 @@ a.white {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #5f4dee;
+	color: white;
 	text-decoration: none;
+	border: 2px solid white;
 }
 
 .btn-solid-lg {
